@@ -15,7 +15,7 @@ io.sockets.on('connection', function(socket){
 })
 
 eventTarget.addEventListener("keydown", event => {
-  if (event.isComposing || event.keyCode === 229) {
+  if (event.isComposing || event.keyCode === 13) {
     return;
   }
   // do something
