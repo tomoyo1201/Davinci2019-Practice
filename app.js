@@ -18,7 +18,7 @@ eventTarget.addEventListener("keydown", event => {
   if (event.isComposing || event.keyCode === 13) {
     return;
   }
-  // do something
+  alert("Hello")
 });
 // File communication (Express)
 // 	Client asks server for a file (Ex: playerImg.png)
