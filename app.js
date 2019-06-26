@@ -13,6 +13,13 @@ var io = require('socket.io')(serv,{});
 io.sockets.on('connection', function(socket){
 	console.log('socket connection')
 })
+
+eventTarget.addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode === 229) {
+    return;
+  }
+  // do something
+});
 // File communication (Express)
 // 	Client asks server for a file (Ex: playerImg.png)
 // 	localhost 
